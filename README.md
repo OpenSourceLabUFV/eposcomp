@@ -1,46 +1,55 @@
 # Título
 
-Coloque a descrição do projeto aqui. Geralmente essa descrição tem de duas a três linhas de tamanho. Ela deve dar uma visão geral sobre o projeto, ex.: tecnologia usada, filosofia de existência, qual problema tenta resolver, etc.
+O Eposcomp é uma plataforma online para auxiliar graduandos que estão se preparando para o exame do Poscomp. 
+Nela os usuários podem realizar simulados usando questões de provas anteriores, podendo assim obter estatísticas de desempenho baseadas em suas respostas. 
 
-> **IMPORTANTE:** coloque aqui alguma mensagem que é muito relevante aos usuários do projeto, se existir.
+> **IMPORTANTE:** O Projeto ainda está no início do desenvolvimento, contribuidores são bem vindos!
 
 ## Funcionalidades
 
-Aqui você pode colocar uma captura de tela do produto resultante desse projeto. Descreva também suas funcionalidades usando uma lista:
-
-- Fácil integração.
-- Poucas dependências.
-- Possui ótima documentação e testes.
+- Realização de Simulados com questões do próprio Poscomp
+- Visualização de Estatísticas de Acertos e Erros
+- Fácil de colocar em produção
 
 ## 🚀 Começando
 
 ### 1. Primeiro passo
 
-Geralmente o primeiro passo para começar é instalar dependências para rodar o projeto. Execute:
+O primeiro passo é instalar as depedências do projeto. Você vai precisar de:
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+Após isso, entre na pasta do projeto
 
 ```
-sudo apt install dependencia
+cd eposcomp
 ```
 
-Coloque os comandos em linhas diferentes:
+E execute o seguinte comando 
 
 ```
-sudo apt install outra-dependencia
+docker-compose build
 ```
 
-Dessa forma os usuários podem copiar e colar sem ler a documentação (que é o que geralmente acontece).
-
-### 2. Outro(s) passo(s)
-
-Geralmente os próximos passos ensinam como instalar e configurar o projeto para uso/desenvolvimento. Execute:
+Após isso, você poderá rodar o projeto usando o comando
 
 ```
-git clone https://github.com/OpenSourceLabUFV/template
+docker-compose up
+```
+
+Abra outra janela do terminal (sem fechar a anterior) e execute os comandos:
+
+```
+docker-compose run web rake db:create
+```
+
+```
+docker-compose run web rake db:migrate
 ```
 
 ## 🤝 Contribua
 
-Sua ajuda é muito bem-vinda, independente da forma! Confira o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para conhecer todas as formas de contribuir com o projeto. Por exemplo, [sugerir uma nova funcionalidade](https://github.com/OpenSourceLabUFV/template/issues/new?assignees=&labels=&template=feature_request.md&title=), [reportar um problema/bug](https://github.com/OpenSourceLabUFV/template/issues/new?assignees=&labels=bug&template=bug_report.md&title=), enviar um pull request, ou simplemente utilizar o projeto e comentar sua experiência.
+Sua ajuda é muito bem-vinda, independente da forma! Confira o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para conhecer todas as formas de contribuir com o projeto. Por exemplo, [sugerir uma nova funcionalidade](https://github.com/OpenSourceLabUFV/eposcomp/issues/new?assignees=&labels=&template=feature_request.md&title=), [reportar um problema/bug](https://github.com/OpenSourceLabUFV/eposcomp/issues/new?assignees=&labels=bug&template=bug_report.md&title=), enviar um pull request, ou simplemente utilizar o projeto e comentar sua experiência.
 
 Lembre - se que as contribuições devem seguir nosso [Código de Conduta](CODE_OF_CONDUCT.md).
 
@@ -50,9 +59,12 @@ Veja o arquivo [ROADMAP.md](ROADMAP.md) para ter uma ideia dos próximos passos 
 
 Esse projeto é licenciado nos termos da licença open-source [MIT](https://choosealicense.com/licenses/mit).
 
+<!--
 ## Projetos semelhantes
 
 Abaixo está uma lista de links interessantes e projetos similares:
 
 - [Projeto inspiração](https://github.com/projeto)
 - [Ferramenta semelhante](https://github.com/projeto)
+-->
+
