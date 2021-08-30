@@ -42,11 +42,12 @@ Abra outra janela do terminal (sem fechar a anterior) e execute os comandos:
 ```
 docker-compose run web rake db:create
 ```
-
 ```
 docker-compose run web rake db:migrate
 ```
-
+```
+docker-compose run web rake db:seed
+```
 ## 🤝 Contribua
 
 Sua ajuda é muito bem-vinda, independente da forma! Confira o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para conhecer todas as formas de contribuir com o projeto. Por exemplo, [sugerir uma nova funcionalidade](https://github.com/OpenSourceLabUFV/eposcomp/issues/new?assignees=&labels=&template=feature_request.md&title=), [reportar um problema/bug](https://github.com/OpenSourceLabUFV/eposcomp/issues/new?assignees=&labels=bug&template=bug_report.md&title=), enviar um pull request, ou simplemente utilizar o projeto e comentar sua experiência.
