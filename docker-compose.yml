@@ -1,14 +1,25 @@
-version: '3'
+version: "3"
+volumes:
+  bundle:       { driver: local }
+  node_modules: { driver: local }
+  config:       { driver: local }
 services:
   db:
     image: postgres
     environment:
       POSTGRES_DB: "db"
       POSTGRES_HOST_AUTH_METHOD: "trust"
-  web:
-    build: .
-    command: bundle exec rails s -p 3000 -b '0.0.0.0'
-    ports:
-      - "3000:3000"
+  app:
     depends_on:
       - db
+    image: alpinelab/ruby-dev
+    ports: ["3035:3035","3000:3000"]
+    volumes:
+      - .:/app
+      - bundle:/bundle
+      - node_modules:/app/node_modules
+      - config:/config
+    environment:
+      PORT: 3000
+      WEBPACKER_DEV_SERVER_HOST: "0.0.0.0"
+      RAILS_ENV: "development"
