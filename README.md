@@ -43,23 +43,24 @@ Após isso, você poderá rodar o projeto usando o comando
 docker-compose up --build app
 ```
 
+Abra outra janela do terminal (sem fechar a anterior) e execute os comandos:
+
+```
+docker-compose run app rake db:create
+```
+```
+docker-compose run app rake db:migrate
+```
+```
+docker-compose run app rake db:seed
+```
+
 Agora você poderá utilizar a plataforma online no seu browser através do link
 
 [localhost:3000](localhost:3000)
 
 Experimente, por exemplo: [localhost:3000/areas](localhost:3000/areas)
 
-<!-- Abra outra janela do terminal (sem fechar a anterior) e execute os comandos:
-
-```
-docker-compose run web rake db:create
-```
-```
-docker-compose run web rake db:migrate
-```
-```
-docker-compose run web rake db:seed
-``` -->
 ## 🤝 Contribua
 
 Sua ajuda é muito bem-vinda, independente da forma! Confira o arquivo [CONTRIBUTING.md](CONTRIBUTING.md) para conhecer todas as formas de contribuir com o projeto. Por exemplo, [sugerir uma nova funcionalidade](https://github.com/OpenSourceLabUFV/eposcomp/issues/new?assignees=&labels=&template=feature_request.md&title=), [reportar um problema/bug](https://github.com/OpenSourceLabUFV/eposcomp/issues/new?assignees=&labels=bug&template=bug_report.md&title=), enviar um pull request, ou simplemente utilizar o projeto e comentar sua experiência.
