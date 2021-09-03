@@ -4,7 +4,7 @@
 # Original link: (not maintained)
 # https://github.com/alpinelab/docker-ruby-dev/
 
-ARG BASE_IMAGE_TAG=latest
+ARG BASE_IMAGE_TAG=3.0.2
 
 FROM ruby:${BASE_IMAGE_TAG}
 
