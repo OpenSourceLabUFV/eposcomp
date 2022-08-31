@@ -15,7 +15,7 @@ config :eposcomp, EposcompWeb.Endpoint,
   url: [host: "localhost"],
   render_errors: [view: EposcompWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Eposcomp.PubSub,
-  live_view: [signing_salt: "GitX/NBI"]
+  live_view: [signing_salt: "oa5Fprpb"]
 
 # Configures the mailer
 #

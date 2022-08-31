@@ -17,7 +17,7 @@ config :eposcomp, Eposcomp.Repo,
 # you can enable the server option below.
 config :eposcomp, EposcompWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "ikJf9f7K6rXeueIxumNhQQVlBMYnU9yt+SPFzybyRR2uMmgVVW4S1fEsJeWQxFfQ",
+  secret_key_base: "cm28ua1uf8KEBZTBBTgpwoWstWmd+sKJmvkHxNxv/DLvBz66QGBArXHB/uFPZJEM",
   server: false
 
 # In test we don't send emails.

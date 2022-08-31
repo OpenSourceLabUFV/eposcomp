@@ -7,7 +7,7 @@ defmodule EposcompWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_eposcomp_key",
-    signing_salt: "96Qcf75D"
+    signing_salt: "KKppmYXg"
   ]
 
   socket "/live", Phoenix.LiveView.Socket, websocket: [connect_info: [session: @session_options]]
