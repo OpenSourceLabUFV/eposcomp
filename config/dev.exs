@@ -23,7 +23,7 @@ config :eposcomp, EposcompWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "g6kzoH3iXeKawCufiNL9NQ8wf4rrFeMrPRS79+Hp5u2Xifvqasyf5AXOIEXldayy",
+  secret_key_base: "vQWSRTVAF8pANhXfVnPKCjuY4tTulH48+cv9f9hZwnAfRqk/RSI2oWY/aQv6c08T",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]}

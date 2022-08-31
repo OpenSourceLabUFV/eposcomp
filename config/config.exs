@@ -8,14 +8,15 @@
 import Config
 
 config :eposcomp,
-  ecto_repos: [Eposcomp.Repo]
+  ecto_repos: [Eposcomp.Repo],
+  generators: [binary_id: true]
 
 # Configures the endpoint
 config :eposcomp, EposcompWeb.Endpoint,
   url: [host: "localhost"],
   render_errors: [view: EposcompWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Eposcomp.PubSub,
-  live_view: [signing_salt: "oa5Fprpb"]
+  live_view: [signing_salt: "GYkmHgxz"]
 
 # Configures the mailer
 #
